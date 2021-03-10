@@ -18,7 +18,12 @@ wallet transaction system which has the following functionalities
  - $ python manage.py migrate
  - $ python manage.py runserver
 
-
+## Features to be added:
+ - Integer and length validations on input phoneNumber
+ - decimal and Number validations on amount fields
+ - BaseEntity with columns created_at , updated_at, is_deleted(for soft deletion)
+ - Log Table for capturing each transactions- Database Locking(optimistic write db lock) or synchronized block in python to handle race conditions of multiple transactions on same wallet
+ - Basic Auth/ api-key to authenticate requests
 
 
 # Postman collection: 
